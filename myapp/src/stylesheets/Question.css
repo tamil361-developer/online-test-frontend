@@ -1,0 +1,12 @@
+.count_container{
+    /* background-image: url("../assets/da.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.count_inner_container{
+background-color:  rgba(236, 246, 94, 0.6);
+}
+.ins{
+    background-color: rgba(236, 246, 94, 0.6);
+}

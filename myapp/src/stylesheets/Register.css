@@ -1,0 +1,8 @@
+.register_container{
+    background: url("../assets/im.jpg");
+    background-size: cover;
+}
+
+.register_row{
+    background-color: rgba(0, 0, 0, .60);
+}

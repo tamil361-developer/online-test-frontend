@@ -1,0 +1,49 @@
+/* .aw {
+  background: #f3f3fd;
+} */
+/* .aw_container {
+  background-color: rgba(136, 136, 241, 0.3);
+} */
+.aw_head{
+    /* color: rgb(27, 5, 165); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* table */
+
+.wt_tr{
+    background-color: rgba(86, 88, 252, 0.3);
+}
+
+
+/* admil test */
+.at{
+    /* background-image: url("../assets/im.jpg"); */
+    background-attachment: fixed;
+    background-size: cover;
+}
+.at_heat{
+    background-color:rgb(226, 226, 245);
+    color: rgb(30, 30, 23);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sub{
+    background-color:rgb(226, 226, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(15, 15, 16);
+}
+.btn_co{
+    background-color:rgb(5, 23, 114);
+    color: rgb(255, 254, 254);
+}
+
+/* admin login */
+.admin_container{
+    background-image: url("../assets/im.jpg");
+    background-size: cover;
+}
+.admin_row{
+    background-color: rgb(0,0,0,0.6);
+}

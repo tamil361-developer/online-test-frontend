@@ -1,0 +1,23 @@
+.user_container {
+  /* background-color: rgb(219, 219, 241); */
+  background-image: url("../assets/im.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.user_head {
+  /* background-color:rgb(222, 222, 236); */
+  background-image: url("../assets/im.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sub_text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.btn_color{
+    background-color: rgb(47, 68, 8);
+}
+.user_text {
+  font-family: "Times New Roman", Times, serif;
+}
