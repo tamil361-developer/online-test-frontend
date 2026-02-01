@@ -21,7 +21,7 @@ function Resetpassword() {
   async function get_otp(e) {
     e.preventDefault();
     try {
-      const res = await fetch("http://127.0.0.1:8000/get_otp/", {
+      const res = await fetch("https://online-test-backend-1-lycf.onrender.com/get_otp/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(reset_details), // must contain email
@@ -40,7 +40,7 @@ function Resetpassword() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/reset_pass/", {
+      const response = await fetch("https://online-test-backend-1-lycf.onrender.com/reset_pass/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

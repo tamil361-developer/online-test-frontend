@@ -30,7 +30,7 @@ function dataanalysis_week() {
   console.log("qst_paper_code", qst_paper_code);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/excel_week/")
+    fetch("https://online-test-backend-1-lycf.onrender.com/excel_week/")
       .then((response) => response.json())
       .then((data1) => {
         if (data1.length > 0) {
@@ -40,7 +40,7 @@ function dataanalysis_week() {
         }
       });
 
-    fetch("http://127.0.0.1:8000/powerbi_week/")
+    fetch("https://online-test-backend-1-lycf.onrender.com/powerbi_week/")
       .then((response2) => response2.json())
       .then((data2) => {
         if (data2.length > 0) {
@@ -50,7 +50,7 @@ function dataanalysis_week() {
         }
       });
 
-    fetch("http://127.0.0.1:8000/tableau_week/")
+    fetch("https://online-test-backend-1-lycf.onrender.com/tableau_week/")
       .then((response3) => response3.json())
       .then((data3) => {
         if (data3.length > 0) {
@@ -60,7 +60,7 @@ function dataanalysis_week() {
         }
       });
 
-    fetch("http://127.0.0.1:8000/sql_week/")
+    fetch("https://online-test-backend-1-lycf.onrender.com/sql_week/")
       .then((response4) => response4.json())
       .then((data4) => {
         if (data4.length > 0) {
@@ -70,7 +70,7 @@ function dataanalysis_week() {
         }
       });
 
-    fetch("http://127.0.0.1:8000/python_week/")
+    fetch("https://online-test-backend-1-lycf.onrender.com/python_week/")
       .then((response5) => response5.json())
       .then((data5) => {
         if (data5.length > 0) {
@@ -80,7 +80,7 @@ function dataanalysis_week() {
         }
       });
 
-    fetch("http://127.0.0.1:8000/statistics_week/")
+    fetch("https://online-test-backend-1-lycf.onrender.com/statistics_week/")
       .then((response6) => response6.json())
       .then((data6) => {
         if (data6.length > 0) {
@@ -113,7 +113,7 @@ function dataanalysis_week() {
   }, [qst_paper_code]);
 
   async function get_marks() {
-    const response = await fetch("http://127.0.0.1:8000/get_week_marks/", {
+    const response = await fetch("https://online-test-backend-1-lycf.onrender.com/get_week_marks/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

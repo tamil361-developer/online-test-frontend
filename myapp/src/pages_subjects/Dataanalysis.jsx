@@ -35,7 +35,7 @@ function User() {
   }, []);
 
   async function get_marks() {
-    const response = await fetch("http://127.0.0.1:8000/get_marks/", {
+    const response = await fetch("https://online-test-backend-1-lycf.onrender.com/get_marks/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -30,7 +30,7 @@ function Login() {
   // *start login api call
   async function loginUser(e) {
     e.preventDefault();
-    const response = await fetch("http://127.0.0.1:8000/login/", {
+    const response = await fetch("https://online-test-backend-1-lycf.onrender.com/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

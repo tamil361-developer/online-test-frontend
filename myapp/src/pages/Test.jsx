@@ -121,7 +121,7 @@ const [next, setNext] = useState(false);
   useEffect(() => {
     if (!qst_id) return;
 
-    fetch(`http://127.0.0.1:8000/${qst_id}/`)
+    fetch(`https://online-test-backend-1-lycf.onrender.com/${qst_id}/`)
       .then((res) => res.json())
       .then((data) => {
         // shuffle questions
@@ -156,7 +156,7 @@ const [next, setNext] = useState(false);
     setDis(true);
     setNext(true);
 
-    const response = await fetch("http://127.0.0.1:8000/ans_check/", {
+    const response = await fetch("https://online-test-backend-1-lycf.onrender.com/ans_check/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(datas),
@@ -164,7 +164,7 @@ const [next, setNext] = useState(false);
 
     const res = await response.json();
 
-    await fetch("http://127.0.0.1:8000/add_ansto_db/", {
+    await fetch("https://online-test-backend-1-lycf.onrender.com/add_ansto_db/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([
