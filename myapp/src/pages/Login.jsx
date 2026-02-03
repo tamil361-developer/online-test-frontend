@@ -97,7 +97,7 @@ function Login() {
               Click...Go to Register
             </a>
             <br />
-            <a className=" mt-5 text-danger" href="/Resetpassword">Reset Password</a>
+            <a className=" mt-5 text-danger" onClick={resetpass}>Reset Password</a>
           </div>
         </div>
       </div>
