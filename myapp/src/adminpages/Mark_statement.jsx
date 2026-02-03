@@ -7,7 +7,7 @@ function Mark_statement() {
   const [marks, setMarks] = useState([]);
 
   function show_mark() {
-    fetch("http://127.0.0.1:8000/get_week_mark_statement/" + std_id + "/", {
+    fetch("https://online-test-backend-1-lycf.onrender.com/get_week_mark_statement/" + std_id + "/", {
       method: "POST",
     })
       .then((res) => res.json())

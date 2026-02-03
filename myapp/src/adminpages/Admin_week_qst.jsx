@@ -29,7 +29,7 @@ function excel_week_qst() {
   // console.log(question);
   // //  get qst
   const fetchQuestions = async () => {
-    const res = await fetch(`http://127.0.0.1:8000/${sub}_week/`);
+    const res = await fetch(`https://online-test-backend-1-lycf.onrender.com/${sub}_week/`);
     const data = await res.json();
     if (data) {
     }
@@ -47,7 +47,7 @@ function excel_week_qst() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://127.0.0.1:8000/${sub}_week/`, {
+    const response = await fetch(`https://online-test-backend-1-lycf.onrender.com/${sub}_week/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(question),
@@ -62,7 +62,7 @@ function excel_week_qst() {
   const deleteQuestion = async (id) => {
     if (window.confirm("Are you sure you want to delete this question?")) {
       const response = await fetch(
-        `http://127.0.0.1:8000/${sub}_week_delete/${id}/`,
+        `https://online-test-backend-1-lycf.onrender.com/${sub}_week_delete/${id}/`,
         {
           method: "DELETE",
         }
@@ -77,7 +77,7 @@ function excel_week_qst() {
   // delete all questions
   function delete_all_questions(subject) {
     if (window.confirm("Are you sure you want to delete all questions?")) {
-      fetch("http://127.0.0.1:8000/all_week_qst_delete/" + subject + "/", {
+      fetch("https://online-test-backend-1-lycf.onrender.com/all_week_qst_delete/" + subject + "/", {
         method: "DELETE",
       })  
         .then((response) => response.json())
