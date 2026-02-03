@@ -39,7 +39,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/register"
+            path="/"
             element={
               <Login_protection>
                 <Register />
