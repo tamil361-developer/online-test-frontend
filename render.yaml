@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: onlinetest-frontend
+    buildCommand: "cd myapp && npm install && npm run build"
+    staticPublishPath: myapp/dist
+    envVars:
+      - key: VITE_API_URL
+        value: "https://yourdomain-api.onrender.com"
