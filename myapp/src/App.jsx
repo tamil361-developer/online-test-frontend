@@ -39,7 +39,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path="#"
             element={
               <Login_protection>
                 <Register />
@@ -47,7 +47,7 @@ function App() {
             }
           />
           <Route
-            path="/login"
+            path="/"
             element={
               <Login_protection>
                 <Login />
