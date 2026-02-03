@@ -18,7 +18,7 @@ function User() {
     localStorage.removeItem("username");
     localStorage.removeItem("email");
     localStorage.removeItem("std_id");
-    page_navigate("/login");
+    page_navigate("/");
   };
   function page_nav(page) {
     localStorage.setItem("sub_name", page);

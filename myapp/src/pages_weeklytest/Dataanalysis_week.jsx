@@ -97,7 +97,7 @@ function dataanalysis_week() {
     localStorage.removeItem("username");
     localStorage.removeItem("email");
     localStorage.removeItem("std_id");
-    page_navigate("/login");
+    page_navigate("/");
   };
 
   // navigate to question page

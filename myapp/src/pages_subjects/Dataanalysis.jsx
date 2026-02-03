@@ -11,6 +11,8 @@ import { SiMysql } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { FcStatistics } from "react-icons/fc";
 
+import { Link } from "react-router-dom";
+
 function User() {
   // mark result for disable buttons
   const [results, setResults] = useState();
@@ -61,7 +63,7 @@ function User() {
     localStorage.removeItem("username");
     localStorage.removeItem("email");
     localStorage.removeItem("std_id");
-    page_navigate("/login");
+    page_navigate("/");
   };
 
   // back page
@@ -106,9 +108,9 @@ function User() {
               DATA ANALYSIS TEST
             </h2>
             <div className="text-center">
-              <a href="/dataanalysis_week" className="btn btn-warning mt-4 ">
+              <Link to="/dataanalysis_week" className="btn btn-warning mt-4 ">
                 Go to Weekly Test
-              </a>
+              </Link>
             </div>
           </div>
           <div className=" col-12 col-md-6 col-lg-4 mt-3 mt-lg-3">

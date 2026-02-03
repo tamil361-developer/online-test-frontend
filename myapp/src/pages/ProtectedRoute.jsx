@@ -8,7 +8,7 @@ function ProtectedRoute({ children }) {
 
   // If user not logged in → redirect to login
   if (!userid) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   } else {
     return children;
   }
