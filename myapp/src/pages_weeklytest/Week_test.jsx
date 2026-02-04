@@ -5,7 +5,7 @@ import "../stylesheets/Test.css";
 
 
 function Test() {
-  // start full screen mode
+ // start full screen mode
   useEffect(() => {
     const enterFullscreen = () => {
       const elem = document.documentElement;
@@ -25,7 +25,7 @@ function Test() {
         !document.msFullscreenElement
       ) {
         // Call API / auto-submit / navigate
-        fetch("/api/submit-exam", { method: "POST", credentials: "include" });
+        fetch("/api/submit-exam", { method: "POST", credentials: "include" });  
         submit_ans();
         // redirect to end page
       }
@@ -51,7 +51,7 @@ function Test() {
 
 
   const [warnings, setWarnings] = useState(0);
-  // start tap controll
+    // start tap controll
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.hidden) {
@@ -64,7 +64,7 @@ function Test() {
         // );
 
         // Optional: Auto-end exam after 3 warnings
-        // if (warnings + 1 >= 1) {
+        // if (warnings + 1 >= 1) { 
         //   submit_ans();
         // }
       }
@@ -188,6 +188,10 @@ function Test() {
         },
       ]),
     });
+
+    setTimeout(() => {
+      document.exitFullscreen();
+    }, 9000);
     
     localStorage.removeItem("questionid");
 

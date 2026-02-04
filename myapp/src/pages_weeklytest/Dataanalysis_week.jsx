@@ -131,8 +131,6 @@ function dataanalysis_week() {
     page_navigate("/dataanalysis");
   }
 
-  console.log(results)
-  console.log("hii")
   return (
     <>
       <div className="user_container container-fluid ">

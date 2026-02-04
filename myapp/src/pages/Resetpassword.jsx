@@ -124,7 +124,7 @@ function Resetpassword() {
                 Reset
               </button>
               <br />
-              <a className=" mt-4 mb-4" href="/login">
+              <a className=" mt-4 mb-4" href="/">
                 Back to Login{" "}
               </a>
             </form>
